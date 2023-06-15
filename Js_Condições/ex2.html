@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="calcular()">Clique para começar</button>
+
+    <div id="text">
+        <!-- A resposta ira aparecer aqui! -->
+    </div>
+
+    <script>
+        function calcular(){
+            const p1 = Number(prompt('Digite um Número!'))
+            const p2 = Number(prompt('Digite outro Número!'))
+
+            if(p1 > p2){
+                document.getElementById('text').innerHTML = `Comparando os valores ${p1} e ${p2}, o valor ${p1} é o maior!`
+            }else if(p1 < p2){
+                document.getElementById('text').innerHTML = `Comparando os valores ${p1} e ${p2}, o valor ${p2} é o maior!`
+            }else{
+                document.getElementById('text').innerHTML = `Comparando os valores ${p1} e ${p2}, ambos são iguais`
+            }
+        }
+    </script>
+</body>
+</html>

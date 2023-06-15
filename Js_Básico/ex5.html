@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="calc()">Clique para Calcular o DOBRO e a METADE!</button>
+
+    <div id="text">
+        <!-- O texto irá aparecer aqui! -->
+    </div>
+
+    <script>
+        function calc(){
+            const p1 = prompt('Digite um Número!')
+            const dobro = p1 * 2
+            const metade = p1 / 2
+            
+            document.getElementById('text').innerHTML = `O dobro de ${p1} é ${dobro} e a metade é ${metade}.`
+        }
+    </script>
+</body>
+</html>

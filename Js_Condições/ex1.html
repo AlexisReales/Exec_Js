@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="descobrir()">Clica para Iniciar</button>
+
+    <div id="text">
+        <!-- Rsposta irá aparecer aqui -->
+    </div>
+
+    <script>
+        function descobrir(){
+            const p1 = Number(prompt('Digite um Número!'))
+            
+            if(p1 % 2 == 0){
+                document.getElementById('text').innerHTML = `O número ${p1} é PAR!`
+            }else{
+                document.getElementById('text').innerHTML = `O número ${p1} é ÍMPAR!`
+            }
+        }
+    </script>
+</body>
+</html>

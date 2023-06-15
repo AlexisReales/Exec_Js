@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="gerar()">Gerar número</button>
+
+    <p>
+        Cada vez que apertar o botão, um número entre 1 e 100 será atribuido!
+    </p>
+
+    <div id="text">
+        <!-- Resposta -->
+    </div>
+
+    <script>
+        function gerar(){
+            const numero = Math.random() * 100
+
+            document.getElementById('text').innerHTML = `O número gerado foi ${numero.toFixed()}!`
+        }
+    </script>
+</body>
+</html>

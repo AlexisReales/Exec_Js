@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="adivinhar()">Adivinhar</button>
+    
+    <p>Um valor foi atrivuido de 1 a 100, adivinhe!</p>
+
+    <div id="text">
+        <!-- Resposta -->
+    </div>
+
+    <script>
+        const resposta = Math.random() * 100
+        
+        function adivinhar(){
+            const p1 = Number(prompt('Digite seu Chute!'))
+
+            if(resposta.toFixed(0) < p1){
+                document.getElementById('text').innerHTML = `Você chutou o numero ${p1}, meu número é MENOR`
+            }else if(resposta.toFixed(0) > p1){
+                document.getElementById('text').innerHTML = `Você chutou o numero ${p1}, meu número é MAIOR`
+            }else{
+                document.getElementById('text').innerHTML = `Você acertou! meu número era ${p1}`
+            }
+        }
+    </script>
+</body>
+</html>

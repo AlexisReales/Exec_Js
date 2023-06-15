@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="analisar()">Clique para Calcular</button>
+
+    <div id="1">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    
+    <hr>
+
+    <div id="2">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="3">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="4">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="5">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="6">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="7">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+    <div id="8">
+        <!-- A resposta irá aparecer aqui! -->
+    </div>
+
+    <script>
+        function analisar(){
+            const p1 = Number(prompt('Digite um Número!'))
+
+            document.getElementById('1').innerHTML = `O valor analisado será o ${p1}`
+            document.getElementById('2').innerHTML = `Seu valor absoluto é ${p1}`
+            document.getElementById('3').innerHTML = `Sua parte inteira é ${parseInt(p1)}`
+            document.getElementById('4').innerHTML = `O valor mais próximo inteiro é ${parseInt(p1 + 1)}`
+            document.getElementById('5').innerHTML = `Sua raiz quadrada é ${Math.sqrt(p1)}`
+            document.getElementById('6').innerHTML = `Sua raiz cúbica é ${Math.cbrt(p1)}`
+            document.getElementById('7').innerHTML = `O valor de ${p1}² é ${p1 * p1}`
+            document.getElementById('8').innerHTML = `O valor de ${p1}³ é ${Math.pow(p1, 3)}`
+        }
+    </script>
+</body>
+</html>

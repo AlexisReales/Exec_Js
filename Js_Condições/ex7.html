@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="calcular()">Iniciar</button>
+
+    <div id="text">
+        <!-- Resposta Aqui -->
+    </div>
+
+    <script>
+        function calcular(){
+            const p1 = Number(prompt('Digite um número!'))
+            const p2 = Number(prompt('Digite um número!'))
+            const p3 = prompt(`Valores informados: ${p1} e ${p2}. \nO que deseja fazer? \n 1 = Somar \n 2 = Subtrair \n 3 = Multiplicar \n 4 = Dividir`)
+            const soma = p1 + p2
+            const subtracao = p1 - p2
+            const multiplicacao = p1 * p2
+            const divisao = p1 / p2
+
+            if(p3 == 1){
+                document.getElementById('text').innerHTML = `${p1} + ${p2} = ${soma}`
+            }else if(p3 == 2){
+                document.getElementById('text').innerHTML = `${p1} - ${p2} = ${subtracao}`
+            }else if(p3 == 3){
+                document.getElementById('text').innerHTML = `${p1} x ${p2} = ${multiplicacao}`
+            }else if(p3 == 4){
+                document.getElementById('text').innerHTML = `${p1} / ${p2} = ${divisao}`
+            }else{
+                document.getElementById('text').innerHTML = `${p1} e ${p2} foram digitados, porém não sei o que fazer com eles!`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="analisar()">Analisar</button>
+
+    <div id="1">
+        <!-- Resultado -->
+    </div>
+    <div id="2">
+        <!-- Resultado -->
+    </div>
+    <div id="3">
+        <!-- Resultado -->
+    </div>
+    <div id="4">
+        <!-- Resultado -->
+    </div>
+    <div id="5">
+        <!-- Resultado -->
+    </div>
+    <div id="6">
+        <!-- Resultado -->
+    </div>
+    <div id="7">
+        <!-- Resultado -->
+    </div>
+
+    <script>
+        function analisar(){
+            const hoje = new Date()
+
+            document.getElementById('1').innerHTML = `Dia: ${hoje.getDate()}`
+            document.getElementById('2').innerHTML = `Mês: ${hoje.getMonth()}`
+            document.getElementById('3').innerHTML = `Ano: ${hoje.getFullYear()}`
+            document.getElementById('4').innerHTML = `Dia da Semana: ${hoje.getUTCDay()}`
+            document.getElementById('5').innerHTML = `Hora: ${hoje.getHours()}`
+            document.getElementById('6').innerHTML = `Minutos: ${hoje.getMinutes()}`
+            document.getElementById('7').innerHTML = `Segundos: ${hoje.getSeconds()}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="descobrir()">Clique em mim!</button>
+
+    <div id="text">
+       <!-- Resposta -->
+    </div>
+
+    <script>
+        function descobrir(){
+            const p1 = prompt('Digite um mês do ano. \nSem Acentuação!').toLocaleLowerCase()
+
+            if(p1 == 'janeiro' || p1 == 'fevereiro' || p1 == 'março'){
+                document.getElementById('text').innerHTML = `No mês de ${p1}, está na estação VERÃO`
+            }else if(p1 == 'abril' || p1 == 'maio' || p1 == 'junho'){
+                document.getElementById('text').innerHTML = `No mês de ${p1}, está na estação OUTONO`
+            }else if(p1 == 'julho' || p1 == 'agosto' || p1 == 'setembro'){
+                document.getElementById('text').innerHTML = `No mês de ${p1}, está na estação INVERNO`
+            }else if(p1 == 'outubro' || p1 == 'novembro' || p1 == 'dezembro'){
+                document.getElementById('text').innerHTML = `No mês de ${p1}, está na estação PRIMAVERA`
+            }else{
+                document.getElementById('text').innerHTML = 'Você digitou um mês inexistente!'
+            }
+        }
+    </script>
+</body>
+</html>
