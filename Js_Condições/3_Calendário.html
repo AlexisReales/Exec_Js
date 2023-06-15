@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- O programa vai informar:
+        - Dia;
+        - Mês;
+        - Ano;
+        - Dia da Semana;
+        - Hora;
+        - Minuto;
+        - Segundo;
+    -->
+
     <button type="button" onclick="analisar()">Analisar</button>
 
     <div id="1">
@@ -38,7 +49,7 @@
             document.getElementById('1').innerHTML = `Dia: ${hoje.getDate()}`
             document.getElementById('2').innerHTML = `Mês: ${hoje.getMonth()}`
             document.getElementById('3').innerHTML = `Ano: ${hoje.getFullYear()}`
-            document.getElementById('4').innerHTML = `Dia da Semana: ${hoje.getUTCDay()}`
+            document.getElementById('4').innerHTML = `Dia da Semana: ${hoje.getUTCDay()}` // Aqui será apresentado números, sendo (0 = domingo) e (6 = sábado)
             document.getElementById('5').innerHTML = `Hora: ${hoje.getHours()}`
             document.getElementById('6').innerHTML = `Minutos: ${hoje.getMinutes()}`
             document.getElementById('7').innerHTML = `Segundos: ${hoje.getSeconds()}`

@@ -8,16 +8,14 @@
 </head>
 <body>
     
-    <button type="button" onclick="alerta()">Clique em MIM!</button>
+    <!-- Integração Script + HTML -->
     
-    <div id="text">
-        <!-- Aqui vai aparecer o resultado! -->
-    </div>
+    <button type="button" onclick="alerta()">Clique em <b>MIM!</button>
+
 
     <script>
         function alerta(){
-            const nome = prompt('Digite seu Nome')
-            document.getElementById('text').innerHTML = `Ola ${nome}, seja bem vindo ao meu site!`
+            alert('Clicou no BOTÂO!')
         }
     </script>
 </body>
